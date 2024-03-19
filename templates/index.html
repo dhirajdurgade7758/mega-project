@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>PolyCommunity</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+        .carousel-item img {
+            object-fit: cover;
+            height: 450px; /* Adjust the height as per your preference */
+        }
+        .carousel-caption {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .carousel-caption h5, .carousel-caption p {
+            color: white; /* Text color */
+        }
+    </style>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'best-carousel-slide.css' %}">
+    <link rel="stylesheet" href="{% static 'best-carousel-slide-1.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="{% static 'Navbar-Right-Links-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'Simple-Slider-Simple-Slider.css' %}">
+</head>
+
+<body style="background: linear-gradient(#F4E2F0, #E8D3EF 18%, #B9B9ED 100%, rgb(190,190,240) 100%);">
+    <div class="row m-0" id="home">
+        <div class="col-12 p-0 mb-2">
+            <nav class="navbar navbar-light navbar-expand-md fixed-top py-2" style="background: #5e65b1;">
+                <div class="container-fluid"><a class="navbar-brand d-flex align-items-center ms-3" href="/" style="color: rgba(247,247,247,0.9);font-size: 20px;"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
+                                <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
+                                <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+                            </svg></span><span class="fw-semibold text-white">Poly Community<br></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse me-2" id="navcol-2" style="color: rgb(43,108,173);">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" href="/" style="color: #ffffff;">Home<br></a></li>
+                            <li class="nav-item"><a class="nav-link" href="contact/" style="color: #ffffff;">Contact<br></a></li>
+                            <li class="nav-item"><a class="nav-link" href="about/" style="color: rgb(255,255,255);">About us<br></a></li>
+                        </ul><a class="btn btn-secondary ms-md-2 px-4" role="button" data-bss-hover-animate="pulse" href="login/" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 27%, rgb(55,64,162) 70%, rgb(56,52,161) 100%);border-style: none;">Login<br></a><a class="btn ms-md-2 px-4" role="button" data-bss-hover-animate="pulse" href="register/" style="font-size: 16px;border-style: none;background: #5dbea3;color: var(--bs-white);">Signup&nbsp;</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="col-12 p-0 mt-5">
+            
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'img/img1.webp' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h1 class="hero-title">Collaborative Learning<br></h1>
+            <p class="hero-subtitle">Learn and collaborate with your peers for a richer educational experience.<br></p>
+            <p><a class="btn hero-button plat rounded-3 px-4" role="button" data-bss-hover-animate="pulse" href="#" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 45%, rgb(55,64,162) 74%, rgb(56,52,161) 100%);border-style: none;color: var(--bs-gray-100);">Join now</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/img2.webp' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h1 class="hero-title">Knowledge Sharing<br></h1>
+            <p class="hero-subtitle">Share your knowledge and learn from others in the community.<br></p>
+            <p><a class="btn hero-button plat rounded-3 px-4" role="button" data-bss-hover-animate="pulse" href="#" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 45%, rgb(55,64,162) 74%, rgb(56,52,161) 100%);border-style: none;color: var(--bs-gray-100);">Join now</a></p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/img3.webp' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h1 class="hero-title">Resource Sharing<br></h1>
+            <p class="hero-subtitle">Share and access study resources with ease.<br></p>
+            <p><a class="btn hero-button plat rounded-3 px-4" role="button" data-bss-hover-animate="pulse" href="#" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 45%, rgb(55,64,162) 74%, rgb(56,52,161) 100%);border-style: none;color: var(--bs-gray-100);">Join now</a></p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+            <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="{% static 'img/img1.webp' %}" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Slide 1 Heading</h5>
+                      <p>Slide 1 Paragraph</p>
+                      <button class="btn btn-primary">Button 1</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'img/img2.webp' %}" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Slide 2 Heading</h5>
+                      <p>Slide 2 Paragraph</p>
+                      <button class="btn btn-primary">Button 2</button>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="{% static 'img/img3.webp' %}" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Slide 3 Heading</h5>
+                      <p>Slide 3 Paragraph</p>
+                      <button class="btn btn-primary">Button 3</button>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div> -->
+            <!-- <section id="carousel">
+                <div class="carousel slide" data-bs-ride="carousel" id="carousel-1">
+                    <div class="carousel-inner">
+                        <div class="carousel-item">
+                            <div class="bg-light border rounded border-light pulse animated hero-nature carousel-hero jumbotron bg1">
+                                <h1 class="hero-title">Collaborative Learning<br></h1>
+                                <p class="hero-subtitle">Learn and collaborate with your peers for a richer educational experience.<br></p>
+                                <p><a class="btn hero-button plat rounded-3 px-4" role="button" data-bss-hover-animate="pulse" href="#" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 45%, rgb(55,64,162) 74%, rgb(56,52,161) 100%);border-style: none;color: var(--bs-gray-100);">Join now</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="bg-light border rounded border-light pulse animated hero-photography carousel-hero jumbotron">
+                                <h1 class="hero-title">Knowledge Sharing<br></h1>
+                                <p class="hero-subtitle">Share your knowledge and learn from others in the community.<br></p>
+                                <p><a class="btn hero-button plat rounded-3 px-4" role="button" data-bss-hover-animate="pulse" href="#" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 45%, rgb(55,64,162) 74%, rgb(56,52,161) 100%);border-style: none;color: var(--bs-gray-100);">Join now</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item active">
+                            <div class="bg-light border rounded border-light pulse animated hero-technology carousel-hero jumbotron">
+                                <h1 class="hero-title">Resource Sharing<br></h1>
+                                <p class="hero-subtitle">Share and access study resources with ease.<br></p>
+                                <p><a class="btn hero-button plat rounded-3 px-4" role="button" data-bss-hover-animate="pulse" href="#" style="font-size: 16px;background: linear-gradient(104deg, #345AA4 0%, rgb(53,78,163) 45%, rgb(55,64,162) 74%, rgb(56,52,161) 100%);border-style: none;color: var(--bs-gray-100);">Join now</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span><span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-bs-slide="next"><span class="carousel-control-next-icon"></span><span class="visually-hidden">Next</span></a></div>
+                    <ol class="carousel-indicators">
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="0"></li>
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="1"></li>
+                        <li data-bs-target="#carousel-1" data-bs-slide-to="2" class="active"></li>
+                    </ol>
+                </div>
+            </section> -->
+        </div>
+
+        <div class="col-12">
+            <h4 class="text-center pt-4" style="color: #2190eb;font-weight: bold;">Why Choose PolyCommunity<br></h4>
+            <h2 class="text-center pt-4" style="color: #4B228D;font-weight: bold;">Making learning easier and more convenient to you<br></h2>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="row d-flex justify-content-center m-0">
+                <div class="col-4 col-xl-3 mb-5 me-5">
+                    <div class="card w-100" data-bss-hover-animate="bounce" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;height: 18.5rem;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="{% static 'icon/currected contents.png' %}"></div>
+                            <h4 class="card-title mb-3">corrected&nbsp;<span style="font-style: normal !important;">Content</span><br></h4>
+                            <p><span style="font-weight: normal !important; font-style: normal !important; color: var(--bs-card-color); background-color: var(--bs-card-bg);">Learn in-depth conceptual overviews, how to approach an algorithm, how to implement it &amp; how to optimize it</span><br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xl-3 mb-5 me-5">
+                    <div class="card w-100" data-bss-hover-animate="bounce" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;height: 18.5rem;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="{% static 'icon/learn from the best.png' %}"></div>
+                            <h4 class="card-title mb-3">Learn from the best<br></h4>
+                            <p>Get access to lectures and get mentored by one of the best&nbsp;in&nbsp;the&nbsp;market<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xl-3 mb-5 me-5">
+                    <div class="card w-100" data-bss-hover-animate="bounce" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;height: 18.5rem;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="{% static 'icon/learn something new.png' %}"></div>
+                            <h4 class="card-title mb-3">Learn something new<br></h4>
+                            <p>Learn new concepts daily, increase your productivity & reach your full potential<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xl-3 mb-5 me-5">
+                    <div class="card w-100" data-bss-hover-animate="bounce" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;height: 18.5rem;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="{% static 'icon/Notes and study mateials.png' %}"></div>
+                            <h4 class="card-title mb-3">Notes &amp; Study Material<br></h4>
+                            <p>Our meticulously crafted notes serve as your roadmap through the material, providing concise summaries and&nbsp;key&nbsp;takeaways.<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xl-3 mb-5 me-5">
+                    <div class="card w-100" data-bss-hover-animate="bounce" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;height: 18.5rem;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="{% static 'icon/old exam papers.png' %}"></div>
+                            <h4 class="card-title mb-3">Old Exam Papers<br></h4>
+                            <p>Test your knowledge and track your progress with a collection of past exam papers Familiarize yourself with the types of questions that&nbsp;may&nbsp;be&nbsp;asked<br></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 col-xl-3 mb-5 me-5">
+                    <div class="card w-100" data-bss-hover-animate="bounce" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;height: 18.5rem;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="{% static 'icon/videoCourses libraries.png' %}"></div>
+                            <h4 class="card-title mb-3">Video Course Library<br></h4>
+                            <p>Visual learners rejoice! Our video courses offer dynamic explanations and walkthroughs, enhancing your understanding and retention,&nbsp;save&nbsp;your&nbsp;time<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-12">
+            <h2 class="text-center pt-4" style="color: #4B228D;font-weight: bold;">Select Your Department<br></h2>
+        </div>
+        <div class="col-12 mt-5">
+            <div class="row m-0">
+
+
+                {% for i in departments %}
+                <div class="col-4 mb-5">
+                    <div class="card" style="border-radius: 10px;box-shadow: 0px 4px 10px 6px #00000029;border-style: none;">
+                        <div class="card-body text-center">
+                            <div style="display: inline-block;width: 100px;"><img class="w-100" src="/media/{{i.icon}}"></div>
+                            <h4 class="card-title mb-3">{{i.dep_name}}</h4>
+                            <a class="btn btn-secondary hero-button plat px-4 rounded-3 mb-2" data-bss-hover-animate="pulse" onclick="dep('{{i.id}}')" style="font-size: 16px;background: linear-gradient(104deg, #3438A4, rgba(47,42,162,0.7573784722222222) 43%, rgba(41,26,160,0.45658315820674894) 92%, rgba(37,16,158,0.2833333333333333) 98%), rgb(255,255,255);border-style: none;">Explore<br></a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            
+
+            </div>
+        </div>
+
+
+        <div class="col-12 p-0">
+            <footer class="text-white" style="background: #5e65b1;">
+                <div class="container py-4 py-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                            <h3 class="fs-6">Services</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="link-light" href="#">Web design</a></li>
+                                <li><a class="link-light" href="#">Development</a></li>
+                                <li><a class="link-light" href="#">Hosting</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                            <h3 class="fs-6">About</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="link-light" href="#">Company</a></li>
+                                <li><a class="link-light" href="#">Team</a></li>
+                                <li><a class="link-light" href="#">Legacy</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column item">
+                            <h3 class="fs-6">Careers</h3>
+                            <ul class="list-unstyled">
+                                <li><a class="link-light" href="#">Job openings</a></li>
+                                <li><a class="link-light" href="#">Employee success</a></li>
+                                <li><a class="link-light" href="#">Benefits</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last item social">
+                            <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-rounded bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bezier">
+                                        <path fill-rule="evenodd" d="M0 10.5A1.5 1.5 0 0 1 1.5 9h1A1.5 1.5 0 0 1 4 10.5v1A1.5 1.5 0 0 1 2.5 13h-1A1.5 1.5 0 0 1 0 11.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zm10.5.5A1.5 1.5 0 0 1 13.5 9h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5v-1zm1.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1zM6 4.5A1.5 1.5 0 0 1 7.5 3h1A1.5 1.5 0 0 1 10 4.5v1A1.5 1.5 0 0 1 8.5 7h-1A1.5 1.5 0 0 1 6 5.5v-1zM7.5 4a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1z"></path>
+                                        <path d="M6 4.5H1.866a1 1 0 1 0 0 1h2.668A6.517 6.517 0 0 0 1.814 9H2.5c.123 0 .244.015.358.043a5.517 5.517 0 0 1 3.185-3.185A1.503 1.503 0 0 1 6 5.5v-1zm3.957 1.358A1.5 1.5 0 0 0 10 5.5v-1h4.134a1 1 0 1 1 0 1h-2.668a6.517 6.517 0 0 1 2.72 3.5H13.5c-.123 0-.243.015-.358.043a5.517 5.517 0 0 0-3.185-3.185z"></path>
+                                    </svg></span><span>PolyCommunity</span></div>
+                            <p class="text-white copyright">The Ultimate Guid To Top MSBTE</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between align-items-center pt-3">
+                        <p class="text-white mb-0">Copyright © 2024 PolyCommunity</p>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                                </svg></li>
+                            <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-twitter">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                </svg></li>
+                            <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                </svg></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+        function dep(depID) {
+           window.location = "/sub/?department=" + depID;
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'bs-init.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="{% static 'Simple-Slider.js' %}"></script>
+    <script>
+        // Enable automatic sliding
+        $('.carousel').carousel({
+          interval: 3000 // Change slide every 3 seconds
+        });
+      </script>
+</body>
+
+</html>

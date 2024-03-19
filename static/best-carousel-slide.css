@@ -1,0 +1,85 @@
+div.jumbotron.carousel-hero {
+  color: #fff;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-bottom: 0;
+}
+
+div.jumbotron.hero-nature {
+  background: url("{% static 'img/img3.webp' %}") no-repeat;
+  background-size: cover;
+}
+
+div.jumbotron.hero-photography {
+  background: url("{% static 'img/img2.webp' %}") no-repeat;
+  background-size: cover;
+}
+
+div.jumbotron.hero-technology {
+  background: url("{% static 'img/img1.webp' %}") no-repeat;
+  background-size: cover;
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+  text-shadow: 0 3px 3px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+p.hero-subtitle {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 10px 15px;
+  color: #fff;
+}
+
+.plat {
+  border-radius: 0px;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 0 #048f83!important;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #016090;
+  border-color: #016090;
+}
+
+.btn.btn-primary {
+  background-color: #048f83!important;
+  border-color: #048f83!important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+  box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
+}
+
+
+
+span {
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.slide1 {
+  background: url("{% static 'img/img1.webp' %}") repeat-y;
+  background-size: cover;
+  filter: contrast(97%);
+}
+
+.slide2 {
+  background: url("{% static 'img/img2.webp' %}") repeat-y;
+  background-size: cover;
+  filter: contrast(97%);
+}
+
+.slide3 {
+  background: url("{% static 'img/img3.webp' %}") repeat-y;
+  background-size: cover;
+  filter: contrast(97%);
+}
+
